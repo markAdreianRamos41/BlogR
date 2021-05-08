@@ -12,29 +12,29 @@
         border-bottom-left-radius: 100px;
         height: 600px;
         width: 100%;
-    }
 
-    .hero-section{
+        .hero-section{
        
-        width: 100%;
-        height: calc(600px - 144px);
-        text-align: center;
-
-        .hero-section-container{
-            transform: translateY(-50px);
-
-            .text-container{
-                
-                padding: 0px 44px;
-                > h1{
-                    margin-bottom: 23px;
-                }
+            width: 100%;
+            height: calc(600px - 144px);
+            text-align: center;
     
-                > p{
-                    font-weight: $fontOverpassRegular;
-                    margin-bottom: 51px;
+            .hero-section-container{
+                transform: translateY(-50px);
+    
+                .text-container{
+                    
+                    padding: 0px 44px;
+                    > h1{
+                        margin-bottom: 23px;
+                    }
+        
+                    > p{
+                        font-weight: $fontOverpassRegular;
+                        margin-bottom: 51px;
+                    }
                 }
             }
         }
-    }
+    }   
 }
