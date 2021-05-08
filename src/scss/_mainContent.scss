@@ -1,0 +1,143 @@
+.main-content-container{
+    width: 100%;
+    background-color: hsl(0, 9%, 96%);
+
+    .main-content-inner-wrapper{
+        margin-bottom: 100px;
+        .first-section{
+            padding: 105px 25px 0px 25px; 
+            text-align: center;
+            > h1 {
+               
+                color: $veryDarkBlue;
+                font-size: 1.5rem;
+            }
+
+            .first-section-main-contents{
+                background: none;
+                width: 100%;
+                .image-mobile-placeholder{
+                    margin: auto;
+                    background: url("../resources/images/illustration-editor-mobile.svg") no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    height: 330px;
+                    width: 330px;
+                }
+
+                .paragraphs{
+                    .paragraph{
+                        &:not(:last-child){
+                            margin-bottom: 57px !important;
+                        }
+                        .title{
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            font-weight: $fontUbuntuRegular;
+                            color: $veryDarkGrayishBlue;
+                            font-size: 0.95rem;
+                            line-height: 30px;
+                        }
+                    }     
+                }  
+            }     
+        }
+
+        .second-section{
+            margin-top: 277px;
+            position: relative;
+            height: 627px;
+            width: 100%;
+            background-color: hsl(236, 25%, 26%);
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            .background-image {
+                
+                border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;
+                background: url("../resources/images/bg-pattern-circles.svg") no-repeat;
+                background-position: center -250px;
+                background-size: 160%;
+                height: 100%;
+                width: 100%;
+                padding-top: 175px;
+                .second-section-image-holder{
+                    position: absolute;
+                    top: -37%;
+                    width: 100%;
+                    height: 100%;
+                    background: url("../resources/images/illustration-phones.svg") no-repeat;
+                    background-position: center 20%;
+                    background-size: contain;
+                }
+
+                .paragraphs{
+                    padding: 0px 27px;
+                    text-align: center;
+                    .paragraph{
+                       margin-top: 57px;
+                       .title{
+                           margin-bottom: 30px;
+                           > h2{
+                               color: $white;
+                               font-size: 2.5rem;
+                           }
+                       }
+                       > p {
+                           font-weight: $fontOverpassRegular;
+                           line-height: 30px;
+                       }
+                    }
+                }
+            }
+        }
+        
+        .third-section{
+            padding: 105px 25px 0px 25px; 
+            text-align: center;
+            > h1 {
+               
+                color: $veryDarkBlue;
+                font-size: 1.5rem;
+            }
+
+            .third-section-main-contents{
+                position: relative;
+                background: none;
+                width: 100%;
+                
+                
+                .third-section-contents{
+                    height: 100%;
+                    width: 100%;
+                    .image-mobile-placeholder{
+                        margin: auto;
+                        background: url("../resources/images/illustration-laptop-mobile.svg") no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        height: 330px;
+                        width: 330px;
+                    }
+    
+                    .paragraphs{
+                        .paragraph{
+                            &:not(:last-child){
+                                margin-bottom: 57px !important;
+                            }
+                            .title{
+                                margin-bottom: 30px;
+                            }
+                            p{
+                                font-weight: $fontUbuntuRegular;
+                                color: $veryDarkGrayishBlue;
+                                font-size: 0.95rem;
+                                line-height: 30px;
+                            }
+                        }     
+                    } 
+                }
+            }     
+        }
+    }
+}

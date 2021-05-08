@@ -1,0 +1,77 @@
+.footer-container{
+    padding-top: 75px;
+    padding-bottom: 85px;
+    background-color: hsl(235, 17%, 12%);
+    border-top-right-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .footer-logo{
+        background: url('../resources/images/logo.svg') no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 82px;
+        height: 40px;
+        width: 100px;
+    }
+
+    footer{
+       margin: auto;
+
+        .footer-navbar-container{
+            .nav-item-container{
+                .nav-options-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nav-item{
+                        text-align: center;
+                        &:not(:last-child){
+                            margin-bottom: 58px;
+                        }
+                        .main-item-sub-menu{
+                            margin-bottom: 40px;
+                            > p {
+                                font-family: $fontUbuntu !important;
+                                font-weight: $fontUbuntuMedium !important;
+                                font-size: 1rem !important;
+                                color: $white;
+                                cursor:default;
+                            }
+                            .mobile-nav-arrow-svg{
+                                display: none;
+                            }
+                        }
+
+                        .sub-menu-container{
+                            .sub-menu{
+                                > p {
+                                    font-family: $fontUbuntu !important;
+                                    font-weight: $fontUbuntuRegular !important;
+                                    color: $grayishBlue;
+                                    margin-bottom: 20px;
+                                    font-size: 1rem !important;
+                                }
+
+                                > p:last-child {
+                                    margin-bottom: 0px;
+                                }
+
+                                > p:hover{
+                                    color: hsl(13, 100%, 72%);
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav-bar-buttons{
+                    display: none;
+                }
+            }
+        }
+    }
+}

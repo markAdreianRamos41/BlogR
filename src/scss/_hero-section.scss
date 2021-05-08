@@ -1,0 +1,40 @@
+.header-hero-section{
+    position: relative;
+    background: $backgroundGradientMobile;
+    border-bottom-left-radius: 100px;
+    height: 600px;
+    width: 100%;
+    
+    .background-placeholder{
+        background: url("../resources/images/bg-pattern-intro.svg") no-repeat;
+        background-position: 35% 35%;
+        background-size: 300%;
+        border-bottom-left-radius: 100px;
+        height: 600px;
+        width: 100%;
+    }
+
+    .hero-section{
+       
+        width: 100%;
+        height: calc(600px - 144px);
+        text-align: center;
+
+        .hero-section-container{
+            transform: translateY(-50px);
+
+            .text-container{
+                
+                padding: 0px 44px;
+                > h1{
+                    margin-bottom: 23px;
+                }
+    
+                > p{
+                    font-weight: $fontOverpassRegular;
+                    margin-bottom: 51px;
+                }
+            }
+        }
+    }
+}

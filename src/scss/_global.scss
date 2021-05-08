@@ -1,0 +1,119 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: $fontSize;
+    background-color: hsl(0, 9%, 96%);
+}
+
+p {
+    font-family: $fontOverpass;
+    font-weight: $fontOverpassBold;
+    font-size: 1rem;
+    margin: 0px;
+    color: $white;
+    cursor: pointer;
+}
+h1{
+    font-family: $fontOverpass;
+    font-weight: $fontOverpassBold;
+    font-size: 2rem;
+    margin: 0px;
+    color: $white;
+}
+h2{
+    color: $veryDarkBlue;
+    font-family: $fontOverpass;
+    font-weight: $fontOverpassBold;
+    font-size: 1.5rem;
+    margin: 0px;
+
+}
+button{
+    cursor: pointer !important;
+    font-size: 1rem;
+    font-family: $fontUbuntu;
+    font-weight: $fontUbuntuMedium;
+}
+
+.df-js-c-ai-s{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.df-jc-sb-ai-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.df-jc-c-ai-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.df-fd-c-jc-c-ai-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hide-for-mobile{
+    @include hide-for-mobile{
+        display: none !important;
+    }
+}
+
+.hide-for-desktop{
+    @include hide-for-desktop{
+        display: none !important;
+    }
+}
+
+.buttons-container{
+    > button{
+        width: 137px;
+        height: 48px;
+        border-radius: 100px;
+        border: none;
+        transition: all 200ms ease-in-out;
+    }
+    > button:first-child{
+        margin-right: 16px;
+        background-color: $white;
+        color: $lightRed;
+       
+
+        &:hover{
+            background-color: $veryLightRed;
+            color: $white;
+        }
+    }
+    > button:last-child{
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+
+        &:hover{
+            background-color: $white;
+            color: $lightRed;
+        }
+    }
+}
+
+.visible{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
