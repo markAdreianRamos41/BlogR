@@ -335,45 +335,10 @@
     .main-content-container{
         .main-content-inner-wrapper{
             .first-section{
-                .first-section-main-contents{
-                    .paragraphs{
-                        .paragraph{
-                            &:not(:last-child){
-                                margin-bottom: 30px !important;
-                            }
-                            .title{
-                                margin-bottom: 10px;
-                            }
-                            p{
-                                
-                                line-height: 25px;
-                            }
-                        }     
-                    }  
-                }     
-            }
-
-            .third-section{
-                .third-section-main-contents{
-                    .third-section-contents{
-                        .paragraphs{
-                            .paragraph{
-                                &:not(:last-child){
-                                    margin-bottom: 30px !important;
-                                }
-                                .title{
-                                    margin-bottom: 10px;
-                                }
-                                p{
-                                    
-                                    line-height: 25px;
-                                }
-                            }     
-                        } 
-                    }
-                }     
+                > h1{
+                    font-size: 2rem;
+                }    
             }
         }
     }
-    
 }
